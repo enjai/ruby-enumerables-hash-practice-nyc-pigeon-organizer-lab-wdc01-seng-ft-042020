@@ -4,12 +4,12 @@ def nyc_pigeon_organizer(data)
   data.each do |trait, attributes|
     attributes.each do |details, names|
       names.each do |name|
-        binding.pry
         pigeon_list[name] ||= {}
         pigeon_list[name][trait] ||= []
         pigeon_list[name][trait] << details.to_s
       end
     end
+    binding.pry
   end
   return pigeon_list
 end
