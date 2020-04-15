@@ -9,7 +9,6 @@ def nyc_pigeon_organizer(data)
         pigeon_list[name][trait] << details.to_s
       end
     end
-    binding.pry
   end
   return pigeon_list
 end
